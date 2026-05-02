@@ -1,0 +1,23 @@
+{
+  "required": true,
+  "package": "ca.niseda.sablemodcompat.mixin",
+  "plugin": "ca.niseda.sablemodcompat.NisedaSableMixinPlugin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "fluid.CopperTapMixin",
+    "oritech.AugmentApplicationBlockMixin",
+    "oritech.MachineCoreBlockMixin",
+    "oritech.NukeBlockAccessor",
+    "oritech.NukeBlockMixin",
+    "oritech.SubLevelAssemblyHelperMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  },
+  "client": [
+    "figura.CameraMixin"
+  ]
+}

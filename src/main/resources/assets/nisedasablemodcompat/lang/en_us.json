@@ -1,0 +1,13 @@
+{
+  "itemGroup.nisedasablemodcompat": "Example Mod Tab",
+  "block.nisedasablemodcompat.example_block": "Example Block",
+  "item.nisedasablemodcompat.example_item": "Example Item",
+
+  "nisedasablemodcompat.configuration.title": "Niseda Sable Mod Compat Configs",
+  "nisedasablemodcompat.configuration.section.nisedasablemodcompat.common.toml": "Niseda Sable Mod Compat Configs",
+  "nisedasablemodcompat.configuration.section.nisedasablemodcompat.common.toml.title": "Niseda Sable Mod Compat Configs",
+  "nisedasablemodcompat.configuration.items": "Item List",
+  "nisedasablemodcompat.configuration.logDirtBlock": "Log Dirt Block",
+  "nisedasablemodcompat.configuration.magicNumberIntroduction": "Magic Number Text",
+  "nisedasablemodcompat.configuration.magicNumber": "Magic Number"
+}
