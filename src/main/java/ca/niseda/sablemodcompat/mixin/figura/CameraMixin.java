@@ -29,7 +29,7 @@ public abstract class CameraMixin {
     private Avatar avatar;
 
     @Inject(method = "setup", at = @At(value = "HEAD"))
-    private void setupAvatarVar(BlockGetter area, Entity focusedEntity, boolean thirdPerson, boolean inverseView, float tickDelta, CallbackInfo ci) {
+    private void nisedasablecompat$setupAvatarVar(BlockGetter area, Entity focusedEntity, boolean thirdPerson, boolean inverseView, float tickDelta, CallbackInfo ci) {
         avatar = AvatarManager.getAvatar(focusedEntity);
     }
 
@@ -44,12 +44,12 @@ public abstract class CameraMixin {
             ),
             cancellable = true
     )
-    private void killFiguraSetup(BlockGetter area, Entity focusedEntity, boolean thirdPerson, boolean inverseView, float tickDelta, CallbackInfo oci, CallbackInfo ci) {
+    private void nisedasablecompat$killFiguraSetup(BlockGetter area, Entity focusedEntity, boolean thirdPerson, boolean inverseView, float tickDelta, CallbackInfo oci, CallbackInfo ci) {
         ci.cancel();
     }
 
     @WrapOperation(method = "setup", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/Camera;setRotation(FFF)V"))
-    private void setupRotFix(Camera instance, float yRot, float xRot, float roll, Operation<Void> original) {
+    private void nisedasablecompat$setupRotFixYXR(Camera instance, float yRot, float xRot, float roll, Operation<Void> original) {
         if (!RenderUtils.vanillaModelAndScript(avatar)) {
             avatar = null;
             original.call(instance, yRot, xRot, roll);
@@ -75,7 +75,7 @@ public abstract class CameraMixin {
     }
 
     @WrapOperation(method = "setup", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/Camera;setRotation(FF)V"))
-    private void setupRotFix(Camera instance, float yRot, float xRot, Operation<Void> original) {
+    private void nisedasablecompat$setupRotFixYX(Camera instance, float yRot, float xRot, Operation<Void> original) {
         if (!RenderUtils.vanillaModelAndScript(avatar)) {
             avatar = null;
             original.call(instance, yRot, xRot);

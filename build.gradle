@@ -197,6 +197,8 @@ dependencies {
     implementation "maven.modrinth:create-aeronautics:1.2.1+mc1.21.1"
     implementation("com.tterrag.registrate:Registrate:${registrate_version}")
 
+    implementation "org.appliedenergistics:appliedenergistics2:${ae2_version}"
+
     implementation "curse.maven:owo-lib-532610:6785734"
     implementation "dev.architectury:architectury-neoforge:$architectury_api_version"
     implementation "curse.maven:oracle-index-1206582:7773037"
@@ -205,6 +207,8 @@ dependencies {
     implementation "software.bernie.geckolib:geckolib-neoforge-$minecraft_version:$geckolib_version"
 
     runtimeOnly "earth.terrarium.athena:athena-neoforge-1.21:4.0.0"
+
+    implementation "curse.maven:yori3os-grappling-hooks-1376009:7946839"
 
 }
 
