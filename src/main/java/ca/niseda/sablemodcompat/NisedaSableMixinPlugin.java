@@ -21,12 +21,15 @@ public class NisedaSableMixinPlugin implements IMixinConfigPlugin {
     private boolean hasOritech = false;
     private boolean hasCreateFluid = false;
     private boolean hasFigura = false;
+    private boolean hasYoriHook = false;
 
     @Override
     public void onLoad(String mixinPackage) {
         hasOritech = classExists("rearth.oritech.Oritech");
         hasCreateFluid = classExists("com.adonis.fluid.CreateFluid");
         hasFigura = classExists("org.figuramc.figura.FiguraMod");
+        hasYoriHook = classExists("com.yori3o.yo_hooks.common.YoHooks");
+
 
     }
 
@@ -43,8 +46,11 @@ public class NisedaSableMixinPlugin implements IMixinConfigPlugin {
             return hasCreateFluid;
         }else if(mixinClassName.startsWith("ca.niseda.sablemodcompat.mixin.figura")){
             return hasFigura;
+        }else if(mixinClassName.startsWith("ca.niseda.sablemodcompat.mixin.yorihook")) {
+            return hasYoriHook;
         }
-        return true;
+
+        return true; // Likely a fix to Sable itself, always allow
     }
 
     @Override

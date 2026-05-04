@@ -42,7 +42,6 @@ public abstract class HookEntityMixin extends Entity {
     @WrapOperation(method = "<init>(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;ILnet/minecraft/world/item/ItemStack;IZI)V", at = @At(value = "INVOKE", target = "Lcom/yori3o/yo_hooks/common/entity/HookEntity;setDeltaMovement(Lnet/minecraft/world/phys/Vec3;)V"))
     private void nisedasablecompat$inheritVelocity(HookEntity instance, Vec3 vec3, Operation<Void> original, @Local(argsOnly = true) LivingEntity owner){
         final SubLevel subLevel = Sable.HELPER.getTrackingSubLevel(owner);
-        NisedaSableModCompat.LOGGER.info("starting vel {}", vec3);
         if (subLevel != null){
             final Vector3d subLevelGainedVelo = new Vector3d();
             final Vector3d currentLocalPos = subLevel.logicalPose().transformPositionInverse(new Vector3d(this.position().x, this.position().y, this.position().z));
@@ -50,7 +49,6 @@ public abstract class HookEntityMixin extends Entity {
             Sable.HELPER.getVelocity(owner.level(), subLevel, currentLocalPos, subLevelGainedVelo);
             subLevelGainedVelo.mul(1.0 / 20.0);
             Vec3 mojangVel = JOMLConversion.toMojang(subLevelGainedVelo);
-            NisedaSableModCompat.LOGGER.info("velocity from sublevel {}", mojangVel);
             vec3 = vec3.add(mojangVel);
         }
         original.call(instance, vec3);
