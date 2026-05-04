@@ -6,7 +6,7 @@ This mod has bug fixes for some mods and for base sable
   - Copper Taps now work off of SubLevels
 - Figura
   - Fixes the crosshair being misaligned when sat on a rotated contraption.
-  - For camera offset bugs when standing on a Sable contraption, try [Sable Figura Camera Fix](https://github.com/Evoloxi/figura-sable-fix/tree/master) 
+  - Fixes camera pivoting being wrong while on a Sable contraption (Thanks to [Evoloxi](https://github.com/Evoloxi) with [Sable Figura Camera Fix](https://github.com/Evoloxi/figura-sable-fix/tree/master) for figuring it out)
 - Oritech
   - Fixes multiblocks breaking when being assembled onto contraptions
   - Fixes the Augmentation Station not working when you walk into it
