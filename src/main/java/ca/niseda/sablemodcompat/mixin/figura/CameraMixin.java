@@ -41,9 +41,9 @@ public abstract class CameraMixin {
             return args;
         }
 
-        double x = (double) args[0];
-        double y = (double) args[1];
-        double z = (double) args[2];
+        double x = (double) args[1];
+        double y = (double) args[2];
+        double z = (double) args[3];
 
         FiguraVec3 piv = nisedasablecompat$avatar.luaRuntime.renderer.cameraPivot;
         if (piv != null && piv.notNaN()) {
@@ -59,9 +59,9 @@ public abstract class CameraMixin {
             z += offset.z;
         }
 
-        args[0] = x;
-        args[1] = y;
-        args[2] = z;
+        args[1] = x;
+        args[2] = y;
+        args[3] = z;
 
         return args;
 
