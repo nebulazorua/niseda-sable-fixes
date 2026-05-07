@@ -11,9 +11,7 @@
     "oritech.MachineCoreBlockMixin",
     "oritech.NukeBlockAccessor",
     "oritech.NukeBlockMixin",
-    "oritech.SubLevelAssemblyHelperMixin",
-    "yorihook.HookEntityMixin",
-    "yorihook.PlayerMixinMixin"
+    "oritech.SubLevelAssemblyHelperMixin"
   ],
   "injectors": {
     "defaultRequire": 1
@@ -22,8 +20,6 @@
     "requireAnnotations": true
   },
   "client": [
-    "figura.CameraMixin",
-    "yorihook.HookRendererMixin",
-    "yorihook.LevelRendererMixinMixin"
+    "figura.CameraMixin"
   ]
 }
