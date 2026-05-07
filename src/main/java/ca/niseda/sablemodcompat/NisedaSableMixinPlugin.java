@@ -27,7 +27,6 @@ public class NisedaSableMixinPlugin implements IMixinConfigPlugin {
         hasOritech = classExists("rearth.oritech.Oritech");
         hasCreateFluid = classExists("com.adonis.fluid.CreateFluid");
         hasFigura = classExists("org.figuramc.figura.FiguraMod");
-
     }
 
     @Override

@@ -181,7 +181,7 @@ dependencies {
     compileOnly(annotationProcessor("com.github.bawnorton.mixinsquared:mixinsquared-common:0.3.7-beta.1"))
     implementation(jarJar("com.github.bawnorton.mixinsquared:mixinsquared-neoforge:0.3.7-beta.1"))
 
-    implementation ("org.figuramc:figura-neoforge:0.1.5+${minecraft_version}")
+    compileOnly ("org.figuramc:figura-neoforge:0.1.5+${minecraft_version}")
 
     api ("dev.ryanhcode.sable:sable-neoforge-${minecraft_version}:${sable_version}") {
         exclude group: "foundry.veil"
@@ -197,18 +197,16 @@ dependencies {
     implementation "maven.modrinth:create-aeronautics:1.2.1+mc1.21.1"
     implementation("com.tterrag.registrate:Registrate:${registrate_version}")
 
-    implementation "org.appliedenergistics:appliedenergistics2:${ae2_version}"
+    compileOnly "org.appliedenergistics:appliedenergistics2:${ae2_version}"
 
-    implementation "curse.maven:owo-lib-532610:6785734"
-    implementation "dev.architectury:architectury-neoforge:$architectury_api_version"
-    implementation "curse.maven:oracle-index-1206582:7773037"
-    implementation "curse.maven:oritech-1030830:7938773"
-    implementation "curse.maven:create-fluid-1346709:7957206"
-    implementation "software.bernie.geckolib:geckolib-neoforge-$minecraft_version:$geckolib_version"
+    compileOnly "curse.maven:owo-lib-532610:6785734"
+    compileOnly "dev.architectury:architectury-neoforge:$architectury_api_version"
+    compileOnly "curse.maven:oracle-index-1206582:7773037"
+    compileOnly "curse.maven:oritech-1030830:7938773"
+    compileOnly "curse.maven:create-fluid-1346709:7957206"
+    compileOnly "software.bernie.geckolib:geckolib-neoforge-$minecraft_version:$geckolib_version"
 
     runtimeOnly "earth.terrarium.athena:athena-neoforge-1.21:4.0.0"
-
-    implementation "curse.maven:yori3os-grappling-hooks-1376009:7946839"
 
 }
 
