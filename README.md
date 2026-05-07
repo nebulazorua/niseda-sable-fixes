@@ -13,5 +13,3 @@ This mod has bug fixes for some mods and for base sable
   - Adds explode-on-impact behaviour to the nuclear explosives for consistency with TNT
 - Applied Energistics 2
   - Wireless Access Points work properly in sublevels
-- Yori3o's Grappling HOoks
-  - They can hook onto sublevels properly
