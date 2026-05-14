@@ -181,7 +181,7 @@ dependencies {
     compileOnly(annotationProcessor("com.github.bawnorton.mixinsquared:mixinsquared-common:0.3.7-beta.1"))
     implementation(jarJar("com.github.bawnorton.mixinsquared:mixinsquared-neoforge:0.3.7-beta.1"))
 
-    compileOnly ("org.figuramc:figura-neoforge:0.1.5+${minecraft_version}")
+    implementation ("org.figuramc:figura-neoforge:0.1.5+${minecraft_version}")
 
     api ("dev.ryanhcode.sable:sable-neoforge-${minecraft_version}:${sable_version}") {
         exclude group: "foundry.veil"
@@ -191,22 +191,22 @@ dependencies {
 
     implementation("foundry.veil:veil-common-${minecraft_version}:${project.veil_version}")
 
-    compileOnly("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive = false }
-    compileOnly("net.createmod.ponder:ponder-neoforge:${ponder_version}+mc${minecraft_version}")
-    compileOnly("dev.engine-room.flywheel:flywheel-neoforge-api-${minecraft_version}:${flywheel_version}")
+    implementation("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive = false }
+    implementation("net.createmod.ponder:ponder-neoforge:${ponder_version}+mc${minecraft_version}")
+    implementation("dev.engine-room.flywheel:flywheel-neoforge-api-${minecraft_version}:${flywheel_version}")
     implementation "maven.modrinth:create-aeronautics:1.2.1+mc1.21.1"
     implementation("com.tterrag.registrate:Registrate:${registrate_version}")
 
-    compileOnly "org.appliedenergistics:appliedenergistics2:${ae2_version}"
+    implementation "org.appliedenergistics:appliedenergistics2:${ae2_version}"
 
-    compileOnly "curse.maven:owo-lib-532610:6785734"
-    compileOnly "dev.architectury:architectury-neoforge:$architectury_api_version"
-    compileOnly "curse.maven:oracle-index-1206582:7773037"
-    compileOnly "curse.maven:oritech-1030830:7938773"
-    compileOnly "curse.maven:create-fluid-1346709:7957206"
-    compileOnly "software.bernie.geckolib:geckolib-neoforge-$minecraft_version:$geckolib_version"
+    implementation "curse.maven:owo-lib-532610:6785734"
+    implementation "dev.architectury:architectury-neoforge:$architectury_api_version"
+    implementation "curse.maven:oracle-index-1206582:7773037"
+    implementation "curse.maven:oritech-1030830:7938773"
+    implementation "curse.maven:create-fluid-1346709:7957206"
+    implementation "software.bernie.geckolib:geckolib-neoforge-$minecraft_version:$geckolib_version"
 
-    runtimeOnly "earth.terrarium.athena:athena-neoforge-1.21:4.0.0"
+    implementation "earth.terrarium.athena:athena-neoforge-1.21:4.0.0"
 
 }
 

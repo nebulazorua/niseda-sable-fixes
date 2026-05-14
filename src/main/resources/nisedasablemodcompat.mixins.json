@@ -9,6 +9,7 @@
     "fluid.CopperTapMixin",
     "oritech.AugmentApplicationBlockMixin",
     "oritech.MachineCoreBlockMixin",
+    "oritech.NuclearExplosionEntityMixin",
     "oritech.NukeBlockAccessor",
     "oritech.NukeBlockMixin",
     "oritech.SubLevelAssemblyHelperMixin"

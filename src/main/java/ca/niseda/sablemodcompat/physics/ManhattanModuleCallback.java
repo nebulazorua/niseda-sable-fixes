@@ -34,7 +34,7 @@ public class ManhattanModuleCallback extends FragileBlockCallback {
 
     @Override
     public double getTriggerVelocity() {
-        return 10.0;
+        return 25.0;
     }
 
     @Override
